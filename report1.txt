@@ -1,0 +1,75 @@
+
+Challenge 1: what's a net cat?
+​Category: General Skills  
+​Difficulty: Easy  
+​Technique: Connecting to a remote host/port using Netcat (nc)  
+​What you learned: How to establish a raw TCP network socket connection using Netcat from the command line to interact with remote services and retrieve server output directly
+ch
+Report: Networking Fundamentals with Netcat
+
+Challenge Title: what's a net cat?
+
+Learning Objectives
+* Understand the core functionality of nc (Netcat) as a command-line utility.
+* Practice opening TCP sockets to remote hosts and ports.
+* Troubleshoot host resolution and network path issues in lab environments.
+
+Step-by-Step Procedure
+1. Identify the Target:Extracted the server hostname (`chatelaine.cylabacademy.net`) and target port (`13016`) from the problem description.
+2. Execute Connection
+   nc chatelaine.cylabacademy.net 13016`
+3. Analyze Output:Received the plaintext stream containing the challenge flag.
+
+Key Knowledge Gained;
+Netcat Usage:Learned how nc <hostname> <port> sends raw data across network connections using TCP or UDP protocols.
+*DNS Resolution:** Understood that domain name resolution relies on functional DNS services within the webshell environment; when hostname resolution fails, direct IP connectivity or proxy interfaces can be utilized instead.
+
+
+challenge 2:cryptography
+​Category: Cryptography  
+​DifficuLty: Easy  
+​Technique: ROT13 substitution cipher decoding  
+​What you learned: How symmetric substitution ciphers work by shifting alphabetic characters by 13 positions, how to use online decoding tools like CyberChef, and how platform-specific flag wrappers function.
+Lab Title: Mod 26 Cryptography Challenge
+​In this lab, I learned how basic substitution ciphers work by solving the Mod 26 challenge on the CyLab Security Academy platform.
+​The challenge provided a text file called values.txt containing a string of jumbled letters. Since the challenge name mentioned Mod 26 and ROT13 was listed in the hints, I knew I needed to apply a 13-character letter shift to reveal the hidden text.
+​I copied the encrypted string from values.txt into an online tool called CyberChef and selected the ROT13 module. The tool automatically shifted all lowercase and uppercase letters while leaving numbers, underscores, and special characters like apostrophes unchanged.
+​Through this process, I learned how ROT13 works as a symmetric cipher, meaning applyng ROT13 a second time returns the text back to its original encrypted form. Replacing the standard picoCTF prefix with the platform's required academy prefix gave me the correct final answer to finish the task.
+
+challenge 3:warm up 
+​Category: General Skills  
+​Difficulty: Easy  
+​Technique: Number base conversion (Hexadecimal to Decimal)  
+​What you learned: How positional base-16 (hexadecimal) values work, how to convert hex representations (such as 0x3D) into base-10 decimal format (61), and how to format the result into a valid flag.
+Lab Title: Warmed Up Number Base Conversion
+​In this lab, I worked on understanding how different number systems relate to each other by completing the Warmed Up challenge on the CyLab Security Academy platform.  
+​The problem gave me a hexadecimal number, 0x3D, and asked for its decimal equivalent. Hexadecimal uses base 16, meaning each column represents a power of 16. Working through the math, the first character 3 multiplied by 16 gave 48, and the character D translated to the decimal number 13 in the ones column. Adding these values together resulted in 61.  
+​This challenge helped me practice manual conversion between base 16 and base 10 systems without needing automated calculators, reinforcing my understanding of how computers and low-level programs handle data representation.
+
+challenge 4:warm
+Category: General Skills  
+​Difficulty: Easy  
+​Technique: Number base conversion (Decimal to Binary)  
+​What you learned: How to convert decimal (base-10) numbers like 42 into their binary (base-2) representation (101010) using repeated division-by-2 remainders and submit them inside the flag wrapper.
+Platform: CyLab Security Academy
+​What I did:
+Converted the base-10 number 42 into base-2 binary by determining the active bit positions (32 + 8 + 2 = 42), resulting in 101010.  
+​What I learned:
+I learned how base-10 decimal numbers map directly to base-2 binary bit patterns and how to submit numerical conversions as flags.  
+​Final Flag:
+picoCTF{101010}
+
+challenge5:base
+Category: General Skills  
+Difficulty: Easy  
+Technique: Base64 Decoding  
+What you learned: How ASCII data is encoded into Base64 representation, how to decode a Base64 string (bDNHcm5fdGgzX3IwcDM1) into readable plaintext (l3rn_th3_r0p35), and how to submit it wrapped in standard flag syntax.
+Platform: CyLab Security Academy
+​What I did:
+Decoded the Base64 string bDNHcm5fdGgzX3IwcDM1 into its original ASCII text form using CyberChef, which gave l3rn_th3_r0p35.  
+​What I learned:
+I learned how Base64 encoding functions, how to identify Base64-encoded text by its character set, and how to decode it to retrieve hidden challenge flags.  
+​Final Flag:
+picoCTF{l3rn_th3_r0p35}
+
+I have done this challenge with the help of cylab security accadamy
